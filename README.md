@@ -16,9 +16,7 @@ Run in development mode with
 npm run dev
 ```
 
-You should see _localhost_ address, where the app is running, in your terminal. _Ctrl + click_ the link or copy/paste it into your browser.
-
-If you see a website with Starknet logo and name all is working as intended, happy hacking!
+Now go to [http://localhost:3000/](http://localhost:3000/). If you see a website with Starknet logo and name, all is working as intended, happy hacking!
 
 ### Final dApp
 
