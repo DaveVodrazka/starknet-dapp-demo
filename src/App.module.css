@@ -1,0 +1,9 @@
+.container {
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
