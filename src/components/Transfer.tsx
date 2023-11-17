@@ -1,16 +1,4 @@
-import { ConnectedStarknetWindowObject } from "starknetkit";
-import { sendEth } from "../api";
-import { DAVID_TESTNET_ADDRESS } from "../constants";
-
-type Props = {
-  wallet?: ConnectedStarknetWindowObject;
-};
-
-export const Transfer = ({ wallet }: Props) => {
-  if (!wallet) {
-    return null;
-  }
-
+export const Transfer = () => {
   const handleClick = () => {
     const toAddress = (
       document.getElementById("to-address") as HTMLInputElement
@@ -18,7 +6,7 @@ export const Transfer = ({ wallet }: Props) => {
     const amount = (document.getElementById("amount") as HTMLInputElement)
       ?.value;
 
-    sendEth(wallet!.account, toAddress, amount);
+    // send "amount" to "toAddress"
   };
 
   return (
@@ -38,7 +26,6 @@ export const Transfer = ({ wallet }: Props) => {
           id="to-address"
           name="to-address"
           type="text"
-          defaultValue={DAVID_TESTNET_ADDRESS}
           placeholder="0x123"
         />
       </label>
